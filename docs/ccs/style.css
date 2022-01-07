@@ -1,0 +1,197 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Reset
+*  2.0 - Fonts
+*  3.0 - Globals
+*  4.0 - Color Palette
+*  5.0 - Header
+*  6.0 - Body
+*    6.1 - Sliders
+*    6.2 - Imagery
+*  7.0 - Footer
+*  8.0 - MediaQuery
+*/
+/*** 1.0 - Reset ***/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*** 2.0 - Fonts ***/
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+/*** 3.0 - Globals ***/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*** 4.0 - Color Palette ***/
+/*** 5.0 - Header ***/
+/*** 6.0 - Body ***/
+body {
+  background-color: #0d192b;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: #14253d;
+  padding: 1.5em;
+  -webkit-box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:link,
+.card a:visited {
+  color: white;
+}
+
+.card a:hover {
+  color: #00fff7;
+}
+
+.card p {
+  color: #8bacda;
+}
+
+.card .equilibrium,
+.card h1,
+.card p {
+  margin-bottom: 1.5rem;
+}
+
+.card .paragraph {
+  font-size: 18px;
+}
+
+.card .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.card .eth {
+  color: #00fff7;
+  font-size: 18px;
+}
+
+.card .eth::before,
+.card .time::before {
+  position: relative;
+  top: 3px;
+}
+
+.card .eth::before {
+  content: url(../images/icon-ethereum.svg);
+}
+
+.card .time::before {
+  content: url(../images/icon-clock.svg);
+}
+
+.card .profile {
+  border-top: 1px solid #2f415b;
+  padding: 1.5em 0 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .profile .avatar {
+  border: 2px solid;
+  border-radius: 50%;
+  margin-right: 1em;
+  width: 3em;
+}
+
+.card .profile p {
+  margin: auto 0;
+}
+
+/*** 5.1 - Sliders ***/
+/*** 5.2 - Imagery ***/
+.equilibrium {
+  display: block;
+  position: relative;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.equilibrium img {
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+.equilibrium .overlay {
+  -webkit-transition: inherit;
+  transition: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.equilibrium:hover {
+  background-color: #00fff7;
+}
+
+.equilibrium:hover .image {
+  opacity: 0.5;
+}
+
+.equilibrium:hover .overlay {
+  opacity: 1;
+}
+
+/*** 7.0 - Footer ***/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1.5em 0 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*** 8.0 - MediaQuery ***/
+/* For tablets: */
+/* For desktop: */
+/*# sourceMappingURL=style.css.map */
